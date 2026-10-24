@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaymi Bolivia · Historia y Cultura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Cinzel:wght@400;600;700;900&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-pattern"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+<link rel="icon" type="image/png" href="condor invertido.jpg">
+    <div class="wrapper">
+
+        <!-- HERO -->
+        <header class="hero">
+            <p class="hero-kicker">✦ Plataforma Interactiva ✦</p>
+            <h1 class="hero-title">Kaymi <span>Bolivia</span></h1>
+            <p class="hero-subtitle">Historia y Cultura Boliviana</p>
+            <div class="hero-divider"><span></span><i>◆</i><span></span></div>
+        </header>
+
+        <!-- CARRUSEL -->
+        <section class="carousel" aria-label="Íconos culturales de Bolivia">
+            <article class="card">
+                <img src="macheteros.jpg" alt="Tiwanaku">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>Tiwanaku</h3>
+                    <p>Civilización ancestral</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="La Paz, Bolivia.jpg" alt="La Paz">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>La Paz</h3>
+                    <p>Sede de Gobierno</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="MONUMENTO AYMARA.png" alt="Monumento Tinku">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>Monumento Tinku</h3>
+                    <p>Maravilla del mundo</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="CONDOR.jpg" alt="Oruro">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>Oruro</h3>
+                    <p>Carnaval Patrimonial</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="diablada.jpg" alt="Diablada">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>Diablada</h3>
+                    <p>Expresión folklórica</p>
+                </div>
+            </article>
+            <article class="card">
+                <img src="SAJAMA.jpg" alt="Sajama">
+                <div class="card-overlay"></div>
+                <div class="card-body">
+                    <h3>Sajama</h3>
+                    <p>Herencia guaraní</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <div class="content-wrapper">
+
+            <!-- Columna izquierda: SOLO el calendario -->
+            <aside class="left-column">
+                <section class="panel calendar-panel">
+                    <header class="panel-header">
+                        <h2><i></i> Calendario Histórico</h2>
+                        <div class="calendar-nav">
+                            <button onclick="changeMonth(-1)" class="nav-btn">‹</button>
+                            <span id="currentMonthYear" class="month-label"></span>
+                            <button onclick="changeMonth(1)" class="nav-btn">›</button>
+                        </div>
+                    </header>
+                    <div class="calendar-grid" id="calendarGrid"></div>
+                    <footer class="panel-footer">
+                        <span class="legend-dot"></span>
+                        <span>Eventos históricos</span>
+                    </footer>
+                </section>
+            </aside>
+
+            <!-- Columna derecha: Guía de estudio -->
+            <main class="info-section" id="infoSection">
+                <div class="welcome">
+                    <div class="welcome-icon">
+                        <img src="condor_monocromatico-removebg-preview.png" alt="Guía de estudio">
+                    </div>
+                    <h2>Bienvenido a tu Guía de Estudio</h2>
+                    <p>Explora el calendario y selecciona una fecha marcada en <strong>morado</strong> para acceder a información histórica detallada sobre Bolivia.</p>
+                    <div class="features">
+                        <span class="feature">✦ Contexto Histórico ✦</span>
+                        <span class="feature">✦ Datos Curiosos ✦</span>
+                        <span class="feature">✦ Resumen ✦</span>
+                        <span class="feature">✦ Imágenes ✦</span>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <!-- ✅ SECCIÓN INFERIOR: Datos Curiosos + Imágenes -->
+        <div class="bottom-section">
+
+            <!-- Datos Curiosos -->
+            <section class="panel facts-panel">
+                <header class="panel-header facts-header">
+                    <h2><i>✦</i> Datos Curiosos</h2>
+                </header>
+                <div id="curiousFactsContent" class="facts-body">
+                    <p class="placeholder">Selecciona una fecha del calendario para descubrir datos fascinantes</p>
+                </div>
+            </section>
+
+            <!-- Imágenes -->
+            <section class="images-section" id="imagesSection">
+                <h3 class="section-title">🖼️ Imágenes Relacionadas</h3>
+                <div class="images-grid" id="imagesGrid">
+                    <p class="placeholder">Selecciona una fecha para ver imágenes</p>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <p>© Kaymi Bolivia · Plataforma Cultural</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
