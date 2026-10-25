@@ -1690,7 +1690,7 @@ function displayEventInfo(eventData) {
             ${contextoFormateado}
         </div>
 
-        <h3 class="section-title">📝 Resumen para tu Cuaderno</h3>
+        <h3 class="section-title">꧁  Resumen para tu Cuaderno</h3>
         <div class="summary-box">
             <p>${resumenResaltado}</p>
         </div>
@@ -1722,9 +1722,7 @@ function displayNoEventInfo(day) {
         imagesGrid.innerHTML = `<p class="placeholder">Selecciona una fecha para ver imágenes</p>`;
     }
 }
-// ============================================================
 // 1. LISTA DE PALABRAS CLAVE
-// ============================================================
 const KEYWORDS_TO_HIGHLIGHT = [
     'Túpac Katari','Tomás Katari','Bartolina Sisa','Eduardo Abaroa',
     'Pedro Domingo Murillo','Simón Bolívar','Antonio José de Sucre',
